@@ -3,20 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESUMEAI Pages</title>
+    <title>RESUMEAI Legal Pages</title>
     <style>
-        body { font-family: sans-serif; padding: 2rem; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 1rem; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            border-radius: 18px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #2d3436;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .btn {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            background-color: #0984e3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #074a8a;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #636e72;
+        }
+        .btn-secondary:hover {
+            background-color: #2d3436;
+        }
     </style>
 </head>
 <body>
-    <h1>RESUMEAI Legal Pages</h1>
-    <ul>
-        <li><a href="privacy_policy.html">Privacy Policy</a></li>
-        <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
-    </ul>
+    <div class="container">
+        <img src="ResumeAI Icon.png" alt="ResumeAI Icon" class="icon">
+        <h1>RESUMEAI Legal</h1>
+        <div class="button-group">
+            <a href="privacy_policy.html" class="btn">Privacy Policy</a>
+            <a href="terms_and_conditions.html" class="btn btn-secondary">Terms and Conditions</a>
+        </div>
+    </div>
 </body>
 </html>
